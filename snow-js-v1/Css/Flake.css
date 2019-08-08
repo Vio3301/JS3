@@ -1,0 +1,35 @@
+.Flake{
+    
+    border-radius: 100%;
+    position: absolute;
+}
+.Flake.small{
+  width: 10px;
+  height: 10px;
+
+}
+.Flake.medium{
+    width: 20px;
+    height: 20px;
+
+}
+.Flake.big{
+    width: 30px;
+    height: 30px;
+
+}
+
+.Flake.small.falling{
+ animation: fall 9s linear infinite;
+}
+.Flake.medium.falling{
+    animation: fall 6s linear infinite;
+   }
+   .Flake.big.falling{
+    animation: fall 3s linear infinite;
+   }
+
+@keyframes fall{
+    from{ transform: translateY(-50px);}
+    to{ transform: translateY(700px);}
+}
